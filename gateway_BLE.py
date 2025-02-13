@@ -11,7 +11,7 @@ if os.name == 'nt':
 
 # Cấu hình
 HM10_NAME = "HMSoft"  # Thay thế bằng tên HM-10 của bạn nếu cần
-SERVER_URL = "http://localhost:5000/api/data"  # Đảm bảo URL đúng
+SERVER_URL = "https://ble-api-iot.onrender.com/api/data"  # Đảm bảo URL đúng
 RETRY_INTERVAL = 5
 
 # Biến bộ đệm để ghép nối dữ liệu
