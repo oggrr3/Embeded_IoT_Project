@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giám Sát Nhiệt Độ và Độ Ẩm</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        h1 { font-size: 2.5em; }
+        p { font-size: 1.5em; }
+    </style>
+</head>
+<body>
+    <h1>Giám Sát Nhiệt Độ và Độ Ẩm</h1>
+    <p>Nhiệt độ: <span id="temperature">--</span> °C</p>
+    <p>Độ ẩm: <span id="humidity">--</span> %</p>
+
+    <script>
+        async function fetchData() {
+            try {
+                const response = await fetch('/api/data');
+                const data = await response.json();
+                document.getElementById('temperature').innerText = data.temperature !== null ? data.temperature : '--';
+                document.getElementById('humidity').innerText = data.humidity !== null ? data.humidity : '--';
+            } catch (error) {
+                console.error('Lỗi khi lấy dữ liệu:', error);
+            }
+        }
+
+        // Cập nhật dữ liệu mỗi 2 giây
+        setInterval(fetchData, 2000);
+        fetchData(); // Gọi hàm lần đầu khi tải trang
+    </script>
+</body>
+</html>

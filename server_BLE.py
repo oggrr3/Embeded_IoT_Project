@@ -1,7 +1,7 @@
 # server.py
 
 import os
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -10,6 +10,12 @@ CORS(app)  # Cho phép CORS để website có thể truy cập API
 # Biến lưu trữ dữ liệu
 latest_data = {'temperature': None, 'humidity': None}
 
+# Route cho trang chủ
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+# API nhận dữ liệu từ gateway_BLE.py
 @app.route('/api/data', methods=['POST'])
 def receive_data():
     data = request.json
