@@ -1,0 +1,92 @@
+10:46:20 **** Incremental Build of configuration Debug for project Read_DHT11_HM_10_BLE ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Read_DHT11_HM_10_BLE.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\My_Documents\Master\Semester_1\Embedded_system_and_IoT\STM_Cube_Projects\Read_DHT11_HM_10_BLE\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Read_DHT11_HM_10_BLE.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Read_DHT11_HM_10_BLE.elf
+ 
+arm-none-eabi-size   Read_DHT11_HM_10_BLE.elf 
+arm-none-eabi-objdump -h -S  Read_DHT11_HM_10_BLE.elf  > "Read_DHT11_HM_10_BLE.list"
+arm-none-eabi-objcopy  -O binary  Read_DHT11_HM_10_BLE.elf  "Read_DHT11_HM_10_BLE.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13376	    120	   1816	  15312	   3bd0	Read_DHT11_HM_10_BLE.elf
+Finished building: default.size.stdout
+ 
+Finished building: Read_DHT11_HM_10_BLE.list
+ 
+Finished building: Read_DHT11_HM_10_BLE.bin
+ 
+10:47:15 **** Incremental Build of configuration Debug for project Read_DHT11_HM_10_BLE ****
+make -j4 all 
+arm-none-eabi-size   Read_DHT11_HM_10_BLE.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13376	    120	   1816	  15312	   3bd0	Read_DHT11_HM_10_BLE.elf
+Finished building: default.size.stdout
+ 
+11:35:00 **** Incremental Build of configuration Debug for project Read_DHT11_HM_10_BLE ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Read_DHT11_HM_10_BLE.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\My_Documents\Master\Semester_1\Embedded_system_and_IoT\STM_Cube_Projects\Read_DHT11_HM_10_BLE\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Read_DHT11_HM_10_BLE.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Read_DHT11_HM_10_BLE.elf
+ 
+arm-none-eabi-size   Read_DHT11_HM_10_BLE.elf 
+arm-none-eabi-objdump -h -S  Read_DHT11_HM_10_BLE.elf  > "Read_DHT11_HM_10_BLE.list"
+arm-none-eabi-objcopy  -O binary  Read_DHT11_HM_10_BLE.elf  "Read_DHT11_HM_10_BLE.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13516	    120	   1816	  15452	   3c5c	Read_DHT11_HM_10_BLE.elf
+Finished building: default.size.stdout
+ 
+Finished building: Read_DHT11_HM_10_BLE.list
+ 
+Finished building: Read_DHT11_HM_10_BLE.bin
+ 
+11:38:54 **** Incremental Build of configuration Debug for project Read_DHT11_HM_10_BLE ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Read_DHT11_HM_10_BLE.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\My_Documents\Master\Semester_1\Embedded_system_and_IoT\STM_Cube_Projects\Read_DHT11_HM_10_BLE\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Read_DHT11_HM_10_BLE.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Read_DHT11_HM_10_BLE.elf
+ 
+arm-none-eabi-size   Read_DHT11_HM_10_BLE.elf 
+arm-none-eabi-objdump -h -S  Read_DHT11_HM_10_BLE.elf  > "Read_DHT11_HM_10_BLE.list"
+arm-none-eabi-objcopy  -O binary  Read_DHT11_HM_10_BLE.elf  "Read_DHT11_HM_10_BLE.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13376	    120	   1816	  15312	   3bd0	Read_DHT11_HM_10_BLE.elf
+Finished building: default.size.stdout
+ 
+Finished building: Read_DHT11_HM_10_BLE.bin
+ 
+Finished building: Read_DHT11_HM_10_BLE.list
+ 
+11:57:05 **** Incremental Build of configuration Debug for project Read_DHT11_HM_10_BLE ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Read_DHT11_HM_10_BLE.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\My_Documents\Master\Semester_1\Embedded_system_and_IoT\STM_Cube_Projects\Read_DHT11_HM_10_BLE\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Read_DHT11_HM_10_BLE.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Read_DHT11_HM_10_BLE.elf
+ 
+arm-none-eabi-size   Read_DHT11_HM_10_BLE.elf 
+arm-none-eabi-objdump -h -S  Read_DHT11_HM_10_BLE.elf  > "Read_DHT11_HM_10_BLE.list"
+arm-none-eabi-objcopy  -O binary  Read_DHT11_HM_10_BLE.elf  "Read_DHT11_HM_10_BLE.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13376	    120	   1880	  15376	   3c10	Read_DHT11_HM_10_BLE.elf
+Finished building: default.size.stdout
+ 
+Finished building: Read_DHT11_HM_10_BLE.list
+ 
+Finished building: Read_DHT11_HM_10_BLE.bin
+ 
+15:06:35 **** Incremental Build of configuration Debug for project Read_DHT11_HM_10_BLE ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Read_DHT11_HM_10_BLE.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\My_Documents\Master\Semester_1\Embedded_system_and_IoT\STM_Cube_Projects\Read_DHT11_HM_10_BLE\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Read_DHT11_HM_10_BLE.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Read_DHT11_HM_10_BLE.elf
+ 
+arm-none-eabi-size   Read_DHT11_HM_10_BLE.elf 
+arm-none-eabi-objdump -h -S  Read_DHT11_HM_10_BLE.elf  > "Read_DHT11_HM_10_BLE.list"
+arm-none-eabi-objcopy  -O binary  Read_DHT11_HM_10_BLE.elf  "Read_DHT11_HM_10_BLE.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13376	    120	   1880	  15376	   3c10	Read_DHT11_HM_10_BLE.elf
+Finished building: default.size.stdout
+ 
+Finished building: Read_DHT11_HM_10_BLE.bin
+ 
+Finished building: Read_DHT11_HM_10_BLE.list
+ 
