@@ -180,7 +180,7 @@
                 const data = await response.json();
                 document.getElementById('temperature').innerText = data.temperature !== null ? data.temperature : '--';
                 document.getElementById('humidity').innerText = data.humidity !== null ? data.humidity : '--';
-                document.getElementById('timestamp').innerText = 'Cập nhật lần cuối: ' + data.timestamp;
+                document.getElementById('timestamp').innerText = 'Cập nhật lần cuối: ' + formatTime(new Date());
 
                 // Lấy lịch sử dữ liệu
                 const historyResponse = await fetch('/api/history');
